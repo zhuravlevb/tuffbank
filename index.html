@@ -1,9 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Tuff Bank</title>
+        <link rel="stylesheet" href="stylesheets/style.css" />
     </head>
-    <body></body>
+    <body>
+        <div class="header">
+            <div class="logo">Tuff Bank</div>
+            <button class="burger" onclick="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="overlay" onclick="closeMenu()"></div>
+
+        <div class="menu">
+            <button class="close-btn" onclick="closeMenu()">✕</button>
+            <a href="">Главная</a>
+            <a href="">Карты</a>
+            <a href="">Переводы</a>
+            <a href="">Вклады</a>
+            <a href="">Поддержка</a>
+        </div>
+
+        <script src="scripts/script.js"></script>
+    </body>
 </html>
