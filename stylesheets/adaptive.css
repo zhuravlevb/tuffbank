@@ -1,0 +1,41 @@
+@media screen and (min-width: 450px) {
+    .header,
+    .fab {
+        width: 426px;
+        left: calc(50vw - 213px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .slide.hero h2 {
+        width: calc(50vw - 331px);
+        color: #fff;
+        position: relative;
+        left: calc(275px - 50vw);
+        top: -35vh;
+        font-size: 96px;
+        line-height: 96px;
+        mix-blend-mode: difference;
+        isolation: isolate;
+    }
+
+    .slide.hero p {
+        width: calc(50vw - 281px);
+        color: #fff;
+        position: relative;
+        left: 470px;
+        top: -230px;
+        font-size: 32px;
+    }
+
+    .slide.hero h2,
+    .slide.hero p {
+        max-width: 400px;
+    }
+
+    .slide.hero img,
+    .slide.hero #cards-scroller {
+        transform: translateY(35vh);
+        margin-bottom: 0 !important;
+    }
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Tuff Bank</title>
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <link rel="stylesheet" href="stylesheets/colors/debit.css" />
+        <link rel="stylesheet" href="stylesheets/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div id="header-contents">
+                <img src="images/icons/menu.svg" class="icon" id="menu" />
+                <img
+                    src="images/logo.svg"
+                    onclick="window.location.href = 'index.html'"
+                />
+                <img
+                    src="images/icons/user.svg"
+                    class="icon"
+                    onclick="window.location.href = 'account.html'"
+                />
+            </div>
+            <div id="menu-burger">
+                <a href="debit.html">Дебетовые карты</a>
+                <a href="credit.html">Кредитные карты</a>
+                <a href="split.html">Рассрочки</a>
+                <br />
+                <a href="about.html">О банке</a>
+                <a href="about.html#contacts">Контакты</a>
+                <a href="app.html">Приложение</a>
+                <br />
+                <div>
+                    <p>© 2026 Tuff Bank</p>
+                    <p>ИНН 05789961</p>
+                    <p>ПАО «Тафф Банк»</p>
+                    <p>ОРГН 6752426932</p>
+                </div>
+            </div>
+        </div>
+        <div class="fab">
+            <p>Выбрать</p>
+        </div>
+        <div class="container">
+            <div class="slide hero">
+                <div id="cards-scroller">
+                    <img src="images/card1.png" />
+                    <img src="images/card2.png" />
+                    <img src="images/card3.png" />
+                    <img src="images/card4.png" />
+                    <img src="images/card5.png" />
+                    <img src="images/card6.png" />
+                </div>
+                <h2>Бесплатная дебетовая карта</h2>
+                <p>Выбери один из&nbsp;множества дизайнов или создай свой</p>
+            </div>
+            <div class="slide">
+                <h2>Чем хороша карта</h2>
+                <div id="benefits">
+                    <div>
+                        <img src="images/icons/card.svg" />
+                        <a>Безопасные покупки онлайн</a>
+                    </div>
+                    <div>
+                        <img src="images/icons/send.svg" />
+                        <a>Переводы без комиссии</a>
+                    </div>
+                    <div>
+                        <img src="images/icons/edu.svg" />
+                        <a>Выгодные акции для студентов</a>
+                    </div>
+                    <div>
+                        <img src="images/icons/bolt.svg" />
+                        <a>Быстрое оформление и&nbsp;доставка</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="designer-slide">
+                <h2>Создай свой дизайн</h2>
+                <div id="p5-card"></div>
+                <div id="tools">
+                    <button
+                        id="tool-brush"
+                        class="tool active"
+                        aria-label="Кисть"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                d="M9.5 14.5 3 21s2.5.5 4.5-.5 2.5-3 2.5-3"
+                                fill="currentColor"
+                                stroke="none"
+                            />
+                            <path
+                                d="m11 13 8.5-8.5a2.12 2.12 0 0 1 3 3L14 16l-3-3Z"
+                            />
+                        </svg>
+                    </button>
+                    <button id="tool-eraser" class="tool" aria-label="Ластик">
+                        <svg
+                            viewBox="0 0 24 24"
+                            width="32"
+                            height="32"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 17 11 9l4 4-8 8H5l-2-2v-2Z" />
+                            <path
+                                d="m11 9 4-4a2 2 0 0 1 3 0l3 3a2 2 0 0 1 0 3l-6 6"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <p id="bg-label">Цвет фона</p>
+                <div id="palette">
+                    <span class="swatch active" data-color="#fa5b9d"></span>
+                    <span class="swatch" data-color="#e8f53d"></span>
+                    <span class="swatch" data-color="#9dff00"></span>
+                    <span class="swatch" data-color="#4ff5e0"></span>
+                    <span class="swatch" data-color="#6a1bff"></span>
+                </div>
+            </div>
+            <div class="slide hero" id="order">
+                <h2>Закажи карту</h2>
+                <p>Привезем бесплатно со&nbsp;скоростью молнии</p>
+                <div id="order-form">
+                    <input type="text" placeholder="ФИО" />
+                    <input type="text" placeholder="Адрес" />
+                    <input type="date" placeholder="Дата" />
+                    <input type="text" placeholder="Номер телефона" />
+                </div>
+            </div>
+            <div class="slide hero">
+                <img src="images/appicon.svg" />
+                <h2>Реально удобное приложение</h2>
+                <p>Скачивай прям ща&nbsp;прям тут с&nbsp;Аппстора</p>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+    <script src="js/debit.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/card-designer.js"></script>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Tuff Bank</title>
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <link rel="stylesheet" href="stylesheets/colors/credit.css" />
+        <link rel="stylesheet" href="stylesheets/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div id="header-contents">
+                <img src="images/icons/menu.svg" class="icon" id="menu" />
+                <img
+                    src="images/logo.svg"
+                    onclick="window.location.href = 'index.html'"
+                />
+                <img
+                    src="images/icons/user.svg"
+                    class="icon"
+                    onclick="window.location.href = 'account.html'"
+                />
+            </div>
+            <div id="menu-burger">
+                <a href="debit.html">Дебетовые карты</a>
+                <a href="credit.html">Кредитные карты</a>
+                <a href="split.html">Рассрочки</a>
+                <br />
+                <a href="about.html">О банке</a>
+                <a href="about.html#contacts">Контакты</a>
+                <a href="app.html">Приложение</a>
+                <br />
+                <div>
+                    <p>© 2026 Tuff Bank</p>
+                    <p>ИНН 05789961</p>
+                    <p>ПАО «Тафф Банк»</p>
+                    <p>ОРГН 6752426932</p>
+                </div>
+            </div>
+        </div>
+        <div class="fab">
+            <p>Оформить</p>
+        </div>
+        <div class="container">
+            <div class="slide hero">
+                <div id="cards-scroller">
+                    <img src="images/card1.png" />
+                    <img src="images/card2.png" />
+                    <img src="images/card3.png" />
+                    <img src="images/card4.png" />
+                </div>
+                <h2>Кредитная карта</h2>
+                <p>
+                    Грейс-период до&nbsp;120 дней на&nbsp;покупки и&nbsp;снятие
+                </p>
+            </div>
+            <div class="slide">
+                <h2>Условия по карте</h2>
+                <div id="benefits">
+                    <div>
+                        <img src="images/icons/card.svg" />
+                        <a>120 дней без процентов</a>
+                    </div>
+                    <div>
+                        <img src="images/icons/bolt.svg" />
+                        <a>Кэшбэк до&nbsp;30% у&nbsp;партнёров</a>
+                    </div>
+                    <div>
+                        <img src="images/icons/send.svg" />
+                        <a>Снятие наличных без&nbsp;комиссии</a>
+                    </div>
+                    <div>
+                        <img src="images/icons/free.svg" />
+                        <a>Бесплатное обслуживание</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="calc-slide">
+                <h2>Подбери лимит</h2>
+                <div id="calc">
+                    <p class="calc-amount">
+                        <span id="limit-value">150 000</span>&nbsp;₽
+                    </p>
+                    <input
+                        type="range"
+                        id="limit-slider"
+                        min="15000"
+                        max="1000000"
+                        step="5000"
+                        value="150000"
+                    />
+                    <div id="calc-stats">
+                        <div>
+                            <span class="stat-num">120</span>
+                            <span class="stat-label">дней без %</span>
+                        </div>
+                        <div>
+                            <span class="stat-num" id="min-pay">7 500</span>
+                            <span class="stat-label">₽ мин. платёж</span>
+                        </div>
+                    </div>
+                    <p id="coffee-note">☕ это всего 15 чашек кофе в месяц</p>
+                </div>
+            </div>
+            <div class="slide hero" id="order">
+                <h2>Оформи кредитку</h2>
+                <p>Решение по&nbsp;заявке за&nbsp;пару минут</p>
+                <div id="order-form">
+                    <input type="text" placeholder="ФИО" />
+                    <input type="text" placeholder="Ежемесячный доход" />
+                    <input type="text" placeholder="Email" />
+                    <input type="text" placeholder="Номер телефона" />
+                </div>
+            </div>
+            <div class="slide hero">
+                <img src="images/appicon.svg" />
+                <h2>Реально удобное приложение</h2>
+                <p>
+                    Следи за&nbsp;лимитом и&nbsp;платежами прямо в&nbsp;телефоне
+                </p>
+            </div>
+        </div>
+    </body>
+    <script src="js/credit.js"></script>
+    <script src="js/script.js"></script>
+</html>

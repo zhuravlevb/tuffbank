@@ -1,0 +1,145 @@
+.slide:nth-of-type(1) {
+    background-color: #fa5b9d;
+    color: #000;
+}
+
+.slide:nth-of-type(4) {
+    background-color: #ff006a;
+    color: #000;
+}
+
+.slide:nth-of-type(5) {
+    background-color: #9dff00;
+    color: #000;
+}
+
+#cards-scroller {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    height: fit-content;
+}
+
+#cards-scroller img {
+    width: 100%;
+    scroll-snap-align: start;
+    margin: 0 !important;
+    transform: none !important;
+}
+
+#benefits {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 230px 230px;
+}
+
+#benefits > div {
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 24px;
+    padding: 16px;
+}
+
+#benefits img {
+    width: 85px;
+    margin: -10px -6px;
+}
+
+#benefits a {
+    font-size: 20px;
+}
+
+#designer-slide {
+    align-items: center;
+    text-align: center;
+}
+
+#designer-slide h2 {
+    text-align: left;
+}
+
+#p5-card {
+    width: 100%;
+    line-height: 0;
+}
+
+#p5-card canvas {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    border-radius: 24px;
+}
+
+#tools {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tool {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: all ease 150ms;
+}
+
+.tool.active {
+    background-color: #fff;
+    color: #111;
+}
+
+.tool:active {
+    opacity: 0.6;
+}
+
+#bg-label {
+    margin-bottom: -12px;
+    opacity: 0.7;
+}
+
+#palette {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+}
+
+.swatch {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 0 solid rgba(255, 255, 255, 0.6);
+    transition: outline ease 150ms;
+}
+
+.swatch.active {
+    outline: 4px solid #fff;
+}
+
+.swatch:active {
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 1200px) {
+    .slide:nth-of-type(4) h2 {
+        top: -5vh !important;
+    }
+
+    .slide:nth-of-type(4) p {
+        top: -50px !important;
+    }
+}

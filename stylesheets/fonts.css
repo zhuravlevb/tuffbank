@@ -1,31 +1,17 @@
 @font-face {
-    font-family: "PT Root UI";
-    font-weight: 400;
+    font-family: "Cy Grotesk";
     src:
-        url("../fonts/PT-Root-UI_Regular.woff2") format("woff2"),
-        url("../fonts/PT-Root-UI_Regular.woff") format("woff");
+        url("../fonts/cy_grotesk.woff2") format("woff2"),
+        url("../fonts/cy_grotesk.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "PT Root UI";
-    font-weight: 700;
+    font-family: "Suisse Intl";
     src:
-        url("../fonts/PT-Root-UI_Bold.woff2") format("woff2"),
-        url("../fonts/PT-Root-UI_Bold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "PT Root UI";
-    font-weight: 600;
-    src:
-        url("../fonts/PT-Root-UI_Medium.woff2") format("woff2"),
-        url("../fonts/PT-Root-UI_Medium.woff") format("woff");
-}
-
-@font-face {
-    font-family: "PT Root UI";
-    font-weight: 300;
-    src:
-        url("../fonts/PT-Root-UI_Light.woff2") format("woff2"),
-        url("../fonts/PT-Root-UI_Light.woff") format("woff");
+        url("../fonts/suisse.woff2") format("woff2"),
+        url("../fonts/suisse.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }

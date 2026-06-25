@@ -1,0 +1,150 @@
+.slide:nth-of-type(1) {
+    background-color: #6f00ff;
+    color: #fff;
+}
+
+.slide:nth-of-type(4) {
+    background-color: #00fff6;
+    color: #000;
+}
+
+.slide:nth-of-type(5) {
+    background-color: #ffe600;
+    color: #000;
+}
+
+#cards-scroller {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    height: fit-content;
+}
+
+#cards-scroller img {
+    width: 100%;
+    scroll-snap-align: start;
+    margin: 0 !important;
+    transform: none !important;
+}
+
+#benefits {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 230px 230px;
+}
+
+#benefits > div {
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 24px;
+    padding: 16px;
+}
+
+#benefits img {
+    width: 85px;
+    margin: -10px -6px;
+}
+
+#benefits a {
+    font-size: 20px;
+}
+
+#calc-slide {
+    text-align: center;
+}
+
+#calc-slide h2 {
+    text-align: left;
+}
+
+#calc {
+    background-color: #222;
+    border-radius: 24px;
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.calc-amount {
+    font-family: "Cy Grotesk", sans-serif;
+    font-size: clamp(24px, 8vw, 38px) !important;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+#limit-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    outline: none;
+    cursor: pointer;
+}
+
+#limit-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+#limit-slider::-moz-range-thumb {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+#calc-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+#calc-stats > div {
+    background-color: #333;
+    border-radius: 16px;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-num {
+    font-family: "Cy Grotesk", sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.stat-label {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+#coffee-note {
+    font-size: 18px !important;
+    opacity: 0.8;
+    margin-top: -8px;
+}
+
+@media screen and (min-width: 1200px) {
+    .slide:nth-of-type(4) h2 {
+        top: -5vh !important;
+    }
+
+    .slide:nth-of-type(4) p {
+        top: -50px !important;
+    }
+}
